@@ -1,0 +1,17 @@
+=render "header"
+
+.wrapper
+  施工例
+  .wrapper__works
+    .wrapper__works__image
+      =image_tag "garden04.jpg",class:"works-image"
+    .wrapper__works__image
+      =image_tag "garden02.jpg",class:"works-image"
+    .wrapper__works__show
+    -@products.each do |product|
+      .wrapper__works__show__title
+      =product.title
+
+
+
+=render "footer"

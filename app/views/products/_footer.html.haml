@@ -1,0 +1,30 @@
+.footer
+  .footer__list
+    %ul
+      %li.title
+        KREATIVE
+      %li 
+        =link_to"HOME","/"
+      %li 
+        =link_to"ABOUT","/about"
+      %li
+        =link_to"WORKS","/works"
+      %li 
+        =link_to"PRICE","/price"
+      %li 
+        =link_to"CONTACT","/users/new"
+
+  .footer__sns
+    %ul
+      = link_to "#" do
+        %li.icon_facebook
+          %i.fa.fa-facebook-square
+      = link_to "#" do
+        %li.icon_twitter
+          %i.fa.fa-twitter
+      = link_to "#" do
+        %li.icon_pinterest
+          %i.fa.fa-pinterest-square
+      =link_to root_path do
+        .footer__logo
+          =image_tag "kreative.jpg",class:"footer-logo"

@@ -1,0 +1,25 @@
+.price-table{
+  height:100vh;
+  table{
+    width: 50%;
+    height:50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size :14px;
+    th{
+      width: 39%;
+      text-align: center;
+      font-weight: 400;
+      background: #dbdada;
+      border-bottom: 8px solid white;
+    }
+    td{
+      background: #fcf9f9;
+      border-bottom: 8px solid white;
+      padding-left:16px;
+      width: 70%;
+    }
+  }
+}
+
