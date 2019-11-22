@@ -18,15 +18,15 @@
 .main
   =image_tag "garden01.jpg",class:"main-image"
   .main__title
-    …and
-    %br Garden!
+    庭のある
+    %p 豊かな暮らし
 .wrapper
   .wrapper__about
     .wrapper__about__box
       =link_to"ABOUT","/about",class:"title"
       =link_to">","/about",class:"more"
     .wrapper__about__image
-      =image_tag "olive_garden.jpg",class:"about-image"
+      =image_tag "nishihata.jpg",class:"about-image"
 
   .wrapper__works
     =link_to"WORKS","/works",class:"title"
@@ -42,23 +42,24 @@
   .wrapper__price
     =link_to"PRICE","/price",class:"title"
     .wrapper__price__image
-      =image_tag "garden06.jpg",class:"price-image"
-      =image_tag "garden07.jpg",class:"price-image"
-      =image_tag "garden05.jpg",class:"price-image"
+      =image_tag "drawing01.png",class:"price-image"
+      =image_tag "perspective02.jpg",class:"price-image"
+      =image_tag "perspective04.jpg",class:"price-image"
       =link_to">","/price",class:"more"
 
   .wrapper__contact
     =link_to"CONTACT","/contact",class:"title"
     .wrapper__contact__container
-      .wrapper__contact__container__office
-        garden & design office
-      .wrapper__contact__container__office_name
-        KREATIVE
-      .wrapper__contact__container__tel
-        tel & fax  
-        %span 0296-86-9027
-      .wrapper__contact__container__address
-        茨城県笠間市笠間2611
+      .wrapper__contact__container__main
+        .wrapper__contact__container__main__office
+          garden & design office
+        .wrapper__contact__container__main__office_name
+          KREATIVE
+        .wrapper__contact__container__main__tel
+          tel & fax
+          %span 0296-86-9027
+        .wrapper__contact__container__main__address
+          address  茨城県笠間市笠間2611
       =link_to">","/contact",class:"more"
 
 

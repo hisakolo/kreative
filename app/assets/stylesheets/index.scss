@@ -6,7 +6,6 @@
     height:120px;
     padding:110px 0 0 120px;
     margin-bottom:140px;
-    font-family: 'AppleGothic'
   }
   ul{
     list-style: none;
@@ -30,8 +29,6 @@
 }
 
 
-
-
 .main{
   width:1200px;
   height:500px;
@@ -44,10 +41,14 @@
   }
   &__title{
   width:200px;
-  padding-left:20px;
-  font-size:60px;
-  font-family: 'bakery';
-  text-align: center;
+  padding:80px 40px 0 0px;
+  font-size:32px;
+  font-family: 'Hiragino Mincho Pro';
+  letter-spacing: 0.8em;
+  writing-mode: vertical-rl;
+  >p{
+    padding:57px 18px 0 0;
+  }
   }
 }
 .wrapper{
@@ -76,8 +77,9 @@
     &__image{
       // padding-left:100px;
       >.about-image{
-        width:1000px;
-        height:200px;
+        width:880px;
+        height:280px;
+        // object-fit: contain;
       }
     }
   }
@@ -101,7 +103,7 @@
     }
     &__image02{ 
       width: 1000px;
-      padding:18px 0 50px;
+      padding-top:18px;
       display:flex;
       // flex-wrap:wrap;
       >.works-image02{
@@ -126,13 +128,13 @@
       padding-bottom:50px;
     }
     &__image{
-      width: 300px;
-      height: 150px;
+      width: 340px;
+      height: 200px;
       padding:50px 0;
       display:flex;
       >.price-image{
-        padding-right:18px;
-        width:320px;
+        padding-right:12px;
+        width:340px;
         height:200px;
       }     
       >.more{
@@ -157,20 +159,25 @@
       width: 1000px;
       height: 350px;
       text-align: center;
-      &__office{
-        padding-top:50px;
-      }
-      &__office_name{
-        font-size:20px;
-        padding-bottom:40px;
-      }
-      &__tel{
-        font-size:20px;
-        >span{
-          font-size:40px;
+      display:flex;
+      &__main{
+        padding:0 120px 0 280px;
+        &__office{
+          padding-top:50px;
+        }
+        &__office_name{
+          font-size:20px;
+          padding-bottom:40px;
+        }
+        &__tel{
+          font-size:20px;
+          >span{
+            padding-left:14px;
+            font-size:40px;
+          }
         }
       }
-      >.more{
+      > .more{
         padding-left:30px;
         font-size:50px;
         line-height: 200px;
@@ -216,6 +223,7 @@
         padding:4px;
         >i{
           font-size:20px;
+          padding-left: 60px;
         }
       }
     }

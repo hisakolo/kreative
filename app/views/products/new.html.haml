@@ -1,4 +1,6 @@
 =form_for [@product] do |f|
+  .gazou
+  = f.file_field :url, placeholder:"画像",class: "up-image"
   .aa
     =f.text_field :title,placeholder:"物件名"
   .bb

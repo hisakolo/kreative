@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index  
-    # @products = Product.find(1)
+    @products = Product.find(1)
   end
 
   def new
@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.new(product_params)
+    @product.images.build(url: product_params[:url])
     if @product.save
       redirect_to root_path
     else
