@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index  
-    @products = Product.find(1)
+    # @products = Product.find(1)
   end
 
   def new
