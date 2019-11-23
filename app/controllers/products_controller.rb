@@ -8,7 +8,10 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.new(product_params)
+    @product = Product.new(title: product_params[:title],
+                          description: product_params[:description],
+                          period: product_params[:period],
+                          price: product_params[:price])
     @product.images.build(url: product_params[:url])
     if @product.save
       redirect_to root_path
@@ -32,7 +35,7 @@ class ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:title, :description, :period, :price)
+    params.require(:product).permit(:title, :description, :period, :price, :url)
   end
 
 end
