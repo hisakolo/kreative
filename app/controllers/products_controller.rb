@@ -23,6 +23,7 @@ class ProductsController < ApplicationController
 
   def works
     @products = Product.all
+    @images = Image.find(params[:id])
   end
 
   def about
