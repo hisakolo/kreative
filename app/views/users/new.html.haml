@@ -1,19 +1,21 @@
 =render "products/header"
 
-= form_for(@user, url: users_path, method: :post) do |f|
-  %p
-    = f.label :name, "お名前"
-    %br/
-    = f.text_field :name
-  %p
-    = f.label :email, "メールアドレス"
-    %br/
-    = f.email_field :email
-  %p
-    = f.label :password, "パスワード"
-    %br/
-    = f.password_field :password
-  = f.submit "登録する"
+
+.form-design
+  = form_for(@user, url: users_path, method: :post) do |f|
+    %p
+      = f.label :name, "お名前",class:"name-form"
+      %br/
+      = f.text_field :name
+    %p
+      = f.label :email, "メールアドレス"
+      %br/
+      = f.email_field :email
+    %p
+      = f.label :password, "パスワード"
+      %br/
+      = f.password_field :password
+    = f.submit "登録する"
 
 
 =render "products/footer"

@@ -1,0 +1,10 @@
+.about{
+  width: 800px;
+  height:600px;
+  margin:40px auto;
+  &__title{
+    font-size:26px;
+    font-weight: bold;
+    padding-bottom: 14px;
+  }
+}
